@@ -1,0 +1,88 @@
+---
+- name: update kernel version
+  hosts: all
+  become: yes
+  tasks: 
+    - name: update kernel version in ubuntu
+      when: ansible_os_family == "Debian"
+      apt:
+        upgrade: dist
+    - name: update kernel in amazon
+      when: ansible_os_family == "Amazon"
+      yum:
+        name: kernel
+        state: latest
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

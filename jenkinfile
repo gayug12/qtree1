@@ -18,7 +18,7 @@ pipeline {
         stage('Modify pem file permission') {
         steps {
              dir("${env.ANSIBLE_DIR}"){
-          sh "sudo chmod 400 ansible.pem" //update your pem file name
+          sh "sudo chmod 400 qtree.pem" //update your pem file name
              }
          }
         }
